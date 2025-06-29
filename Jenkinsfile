@@ -26,16 +26,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-            echo 'Pipeline finished.'
-        }
-        failure {
-            echo 'Build failed!'
-        }
-        success {
-            echo 'Build succeeded!'
-        }
-    }
 }
